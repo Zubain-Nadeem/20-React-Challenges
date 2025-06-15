@@ -57,7 +57,9 @@ const Counter = () => {
         </button>
       </div>
     </div>
-  );
+  );  
 };
 
 export default Counter;
+
+
