@@ -49,17 +49,18 @@ const ImageGallery = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-8">Image Gallery</h1>
+      <p className='text-lg mb-8 text-center font-semibold'>Click The Image To View It Larger</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {images.map((image) => (
           <div
             key={image.id}
-            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform hover:scale-105 aspect-[3/4] hover:opacity-[0.5]"
+            className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform hover:scale-105 hover:opacity-[0.5]"
             onClick={() => handleImageClick(image)}
           >
             <img
               src={image.url}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-[300px] object-cover"
             />
           </div>
         ))}
