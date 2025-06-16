@@ -1,9 +1,9 @@
 import React from 'react'
-import ImageGallery from "./ImageGallery.jsx";
+import ImageGallery from './components/ImageGallery'
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <div className="min-h-screen bg-gray-100">
       <ImageGallery />
     </div>
   )
