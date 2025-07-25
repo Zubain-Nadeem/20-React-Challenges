@@ -1,10 +1,12 @@
 import React from 'react'
-import Faq from './Faq'
+import Accordian from './Accordian/Accordian'
+
 
 const App = () => {
   return (
     <div>
-      <Faq />
+      <Accordian />
+      
     </div>
   )
 }
